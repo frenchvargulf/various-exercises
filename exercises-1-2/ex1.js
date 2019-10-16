@@ -12,3 +12,9 @@ const uniqueElements = array.filter( (val, index, self) =>
 )
 
 console.log(uniqueElements)
+
+
+
+const findUnique = (a) => [...new Set(a)];
+
+console.log(findUnique(array))

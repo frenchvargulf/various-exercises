@@ -14,12 +14,20 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Rome',
+      path: '/rome',
       name: 'rome',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('./views/Rome.vue')
+    },
+    {
+      path: '/visa',
+      name: 'visa',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('./views/VisaCard.vue')
     }
   ]
 })
