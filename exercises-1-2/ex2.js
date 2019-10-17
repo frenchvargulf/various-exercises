@@ -1,15 +1,13 @@
 // First option
 const array = [1, 2, 3, 4, 4, 2, 1, 3];
 
-function findUnique(a) {
-  return [...new Set(a)]
-}
+const findUnique = a => [...new Set(a)];
 
 console.log(findUnique(array))
 
 // Second option
 
-const uniqueElements = arr => arr.filter((val, index, self) => {
+const uniqueElements = arr => arr.filter( (val, index, self) => {
   // val - value of item in array 
   // index - index of item in array
   // self - array
@@ -38,27 +36,22 @@ const input1 = [{
   }
 ]
 
-const output1 = (arr) => arr.map((object) => {
-  return object.a
-})
+const output1 = (arr) => arr.map( object => object.a)
 
 console.log(output1(input1))
 
 // 2
 const input2 = [1, 2, 3, 4];
 
-const output2 = (arr) => arr.map((number) => {
-  return number * 2
-})
+const output2 = arr => arr.map( number => number * 2 );
 
-console.log(output2)
+console.log(output2(input2))
 
 // 3
 
 const input3 = [1, 2, 3, 4, 5, 6];
-const output3 = (arr) => arr.filter((number) => {
-  return number % 2 === 0;
-})
+
+const output3 = arr => arr.filter( number => number % 2 === 0);
 
 console.log(output3(input3));
 
@@ -66,20 +59,16 @@ console.log(output3(input3));
 // 4.
 
 const input4 = [1, 2, 3, 4];
-const output4 = (arr) => arr.reduce((prev, next) => {
-  return prev + next;
-})
+
+const output4 = (arr) => arr.reduce( (prev, next) => prev + next);
 
 console.log(output4(input4))
 
 // 5.
 
 const input5 = [1, 2, 3, 4, 5, 6];
-const output5 = (arr) => arr.filter(((number) => {
-  return number % 2 != 0;
-})).reduce((prev, next) => {
-  return prev + next;
-})
+
+const output5 = (arr) => arr.filter( number => number % 2 != 0).reduce( (prev, next) => prev + next);
 
 console.log(output5(input5))
 

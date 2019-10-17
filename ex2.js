@@ -58,11 +58,11 @@ console.log(output2)
 //     [2, 4, 6]
 
 const input3 = [1, 2, 3, 4, 5, 6];
-const output3 = input3.filter((number) => {
+const output3 = (arr) = arr.filter((number) => {
   return number % 2 === 0;
 })
 
-console.log(output3)
+console.log(output3(input3))
 
 
 // 4.
@@ -165,12 +165,10 @@ const input8 = {
   ]
 }
 
-let array = [];
-
 const output8 = Object.keys(input8).map((key) => { 
   return {
-  key: key,
-  value: input8[key]
+    key: key,
+    value: input8[key]
 }
 
 })
