@@ -6,8 +6,11 @@
       <sui-menu-item ><router-link to="/">
         Card Component
       </router-link></sui-menu-item> 
-      <sui-menu-item><router-link to="/Rome">
+      <sui-menu-item><router-link to="/rome">
         Rome Component
+      </router-link></sui-menu-item>
+      <sui-menu-item><router-link to="/visa">
+        Visa Card
       </router-link></sui-menu-item>
     </sui-menu>
     <router-view/>
