@@ -30,6 +30,8 @@ module.exports = {
         ]
     },
     'rules': {
+        'test': '/\.svg$/',
+        'loader': 'vue-svg-loader',
         'accessor-pairs': 'error',
         'array-bracket-spacing': [
             'error',

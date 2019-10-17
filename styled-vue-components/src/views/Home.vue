@@ -6,7 +6,7 @@
 
 <script>
 
-import ImageCard1 from '@/components/FoodComponent.vue'
+import ImageCard1 from '@/components/VisitComponent.vue'
 
 export default {
   name: 'home',

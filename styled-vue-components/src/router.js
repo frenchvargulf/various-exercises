@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 Vue.use(Router)
+
+const lazyLoad = (view) => {
+  return() => import(`@/views/${view}.vue`)
+}
 
 export default new Router({
   mode: 'history',
@@ -11,15 +14,17 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: lazyLoad('Home')
     },
     {
-      path: '/Rome',
+      path: '/rome',
       name: 'rome',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('./views/Rome.vue')
+      component: lazyLoad('Rome')
+    },
+    {
+      path: '/visa',
+      name: 'visa',
+      component: lazyLoad('VisaCard')
     }
   ]
 })

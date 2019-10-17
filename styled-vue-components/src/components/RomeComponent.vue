@@ -41,6 +41,7 @@ export default {
 }
 
 .title-card {
+  font-family: 'Open Sans', sans-serif;
   color: white;
   font-weight: 900;
   font-size: 30px;
@@ -67,6 +68,7 @@ export default {
 .download-button {
   border-radius: 15px;
   font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
 }
 
 </style>

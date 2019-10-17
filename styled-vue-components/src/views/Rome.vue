@@ -1,5 +1,5 @@
 <template>
-  <div class="about" is="sui-container">
+  <div class="rome" is="sui-container">
     <ImageCard2 />
   </div>
 </template>
@@ -19,7 +19,8 @@ export default {
 
 <style lang="scss">
 
-.about.ui .container {
+
+.rome.ui .container {
   display: flex;
   justify-content: center;
 }
