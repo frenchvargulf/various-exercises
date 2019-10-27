@@ -60,7 +60,7 @@ console.log(output3(input3));
 
 const input4 = [1, 2, 3, 4];
 
-const output4 = (arr) => arr.reduce( (prev, next) => prev + next);
+const output4 = (arr) => arr.reduce( (sum, element) => sum + element);
 
 console.log(output4(input4))
 
@@ -68,7 +68,7 @@ console.log(output4(input4))
 
 const input5 = [1, 2, 3, 4, 5, 6];
 
-const output5 = (arr) => arr.filter( number => number % 2 != 0).reduce( (prev, next) => prev + next);
+const output5 = (arr) => arr.filter( number => number % 2 != 0).reduce( (sum, element) => sum + element);
 
 console.log(output5(input5))
 
