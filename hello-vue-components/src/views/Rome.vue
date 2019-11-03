@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <ImageCard1 />
+  <div class="rome">
+    <ImageCard2 />
   </div>
 </template>
 
 <script>
 
-import ImageCard1 from '@/components/VisitComponent.vue'
+import ImageCard2 from '@/components/RomeComponent.vue'
 
 export default {
-  name: 'home',
+  name: 'Rome',
   components: {
-    ImageCard1
+    ImageCard2
   }
 }
 
@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss">
 
-.home.ui .container {
+.rome .container {
   display: flex;
   justify-content: center;
 }

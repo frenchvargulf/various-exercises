@@ -5,7 +5,7 @@
           <img class="img-cnt-img" v-bind:src=image />
         </div>
         <div class="card-content">
-          <h2 class="card-content-title"> Visit Scotland </h2>
+          <h1 class="card-content-title"> Visit Scotland </h1>
           <span class="card-content-text">
             Scotland is a country in Europe and is part of the island of Great Britain. 
           </span>
@@ -20,15 +20,14 @@
 
 
 <script>
-import firstViewImage from "../assets/scotland1.jpeg"
-import secondViewImage from "../assets/scotland2.jpeg"
+
+import image from '../assets/scotland1.jpeg'
 
 export default {
   name: 'ImageCard1',
   data: () => {
     return {
-      image: firstViewImage,
-      image2: secondViewImage
+      image: image
     }
   }
 };
@@ -50,10 +49,13 @@ export default {
   border-radius: 30px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   font-family: 'Raleway';
+
+  background-color: rgb(255, 255, 255);
 }
 
 .card-content {
@@ -65,12 +67,6 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   font-size: 16px;
-}
-
-
-  
-.img-cnt {
-
 }
 
 .img-cnt-img {
@@ -86,12 +82,12 @@ export default {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  margin: 0;
 }
 
 .card-content-text {
   color: #33558b;
   width: 80%;
-  
 }
 
 .card-content-btn {

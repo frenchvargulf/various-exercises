@@ -32,12 +32,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="css">
 
-.ui .container {
+/* .container {
   display: flex;
   justify-content: center;
-}
+} */
 
 .visa-cnt {
   background-color: dodgerblue;

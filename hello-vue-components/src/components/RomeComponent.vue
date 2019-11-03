@@ -11,23 +11,17 @@
 
 
 <script>
-import firstViewImage from "../assets/rome.jpg"
-import { mdbCard, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn } from 'mdbvue';
+
 
 export default {
 		name: 'ImageCard2',
 		components: {
-			mdbCard,
-			mdbCardImage,
-			mdbCardBody,
-			mdbCardTitle,
-			mdbCardText,
-			mdbBtn
+     
 		}
 	}
 </script>
 
-<style lang="scss">
+<style lang="css">
 
 .container {
   width: 100%;
@@ -36,12 +30,14 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} 
 
 .card-body {
-  max-width: 268px;
-  height: 318px;
-  border-radius: 35px;
+  width: 16em;
+  height: 19em;
+  padding: 1em;
+  border-radius: 2em;
+
   background-image: url("../assets/rome.jpg");
   background-size: cover;
   background-position: center right;
@@ -56,11 +52,11 @@ export default {
   color: white;
   font-weight: 700;
   font-size: 30px;
-  padding: 5px 5px 0 0;
+  margin: .2em;
 }
 
 .download-button {
-  border-radius: 30px;
+  border-radius: 2em;
   font-weight: 700;
   width: 230px;
   height: 53px;
@@ -70,18 +66,7 @@ export default {
   background-color: #4ca2ff;
   align-self: center;
   outline: none;
+  color: rgb(255,255,255);
 }
-
-// .download-button:hover {
-//   outline: none;
-//   border-color: #4ca2ff;
-//   background-color: #4ca2ff;
-// }
-
-// button:focus {
-//   outline: none;
-//   border-color: #4ca2ff;
-//   background-color: #4ca2ff;
-// }
 
 </style>

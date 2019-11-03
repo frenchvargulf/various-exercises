@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss">
 
-.home.ui .container {
+.home .container {
   display: flex;
   justify-content: center;
 }
